@@ -31,8 +31,18 @@ namespace ModelsAndModelBinding.Controllers
 
             return View();      
         }
+        [HttpGet]
         public IActionResult AddWithBinding() 
         {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddWithBinding(Animal A)
+        {
+            if (ModelState.IsValid) // will run all validation if passed returns true
+            {
+                
+            }
             return View();
         }
     }
