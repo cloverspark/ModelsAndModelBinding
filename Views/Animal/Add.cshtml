@@ -7,24 +7,26 @@
 {
     <h1>Add new Animal</h1>
 
-    <form method = "post">
-        <label>Animal Name</label>
-        <input type="text" name="Animal_Name" />
-        <br />
-        <label>Owners Name</label>
-        <input type="text" name="Animals_Owner_Name" />
-        <br />
-        <label>Animal Breed</label>
-        <input type="text" name="Animal_Breed" />
-        <br />
-        <label> Date Dropped Off</label>
-        <input type="date" name="Date_Dropped_Off" />
-        <br />
+    <form method="post">
+        <div class="form-group">
+            <label>Animal Name</label>
+            <input class="form-control" type="text" name="Animal_Name" />
+        </div>
+        <div class="form-group">
+            <label>Owners Name</label>
+            <input class="form-control" type="text" name="Animals_Owner_Name" />
+        </div>
+            <label>Animal Breed</label>
+            <input class="form-control" type="text" name="Animal_Breed" />
+        <div class="form-group">
+            <label> Date Dropped Off</label>
+            <input class="form-control"  type="date" name="Date_Dropped_Off" />
+        </div>
         <input type="submit" value="Add Animal" />
-</form>
+    </form>
 }
 else
 { 
-    <p>Added Animal Successfully</p>
+    <div  class="alert alert-success" role="alert">@ViewData["Added"]</div>
 }
 

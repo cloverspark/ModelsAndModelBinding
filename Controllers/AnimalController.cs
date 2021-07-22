@@ -27,7 +27,7 @@ namespace ModelsAndModelBinding.Controllers
 
             // add to database
 
-            ViewData["Added"] = true;
+            ViewData["Added"] = pet.OwnerFullName +" your pet named " + pet.AnimalName + " was added with ID of 1";
 
             return View();      
         }
