@@ -24,10 +24,13 @@ namespace ModelsAndModelBinding.Models
         /// </summary>
         public string OwnerFullName { get; set; }
         /// <summary>
+        /// the breed of the animal 
+        /// </summary>
+        public string breed { get; set; }
+        /// <summary>
         /// Day of animals getting dropped off at animal watcher(animal babysitter)
         /// Time is ignored
         /// </summary>
         public DateTime DateTimeOfDropOff { get; set; }
-
     }
 }
