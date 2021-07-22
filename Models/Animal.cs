@@ -40,7 +40,6 @@ namespace ModelsAndModelBinding.Models
         /// </summary>
         [Display(Name = "Drop off date of Animal")]
         [DataType(DataType.Date)]
-        [Required]
         public DateTime DateTimeOfDropOff { get; set; }
     }
 }
