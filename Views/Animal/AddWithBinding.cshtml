@@ -5,3 +5,26 @@
 
 <h1>Add With ModelBinding</h1>
 
+<form method="post">
+    <div class="form-group">
+        <label asp-for="AnimalName"></label>
+        <input class="form-control" asp-for="AnimalName" />
+        <span asp-validation-for="AnimalName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="OwnerFullName"></label>
+        <input class="form-control" asp-for="OwnerFullName" />
+        <span asp-validation-for="OwnerFullName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Breed"></label>
+        <input class="form-control" asp-for="Breed" />
+        <span asp-validation-for="Breed"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateTimeOfDropOff"></label>
+        <input class="form-control" asp-for="DateTimeOfDropOff" />
+        <span asp-validation-for="DateTimeOfDropOff"></span>
+    </div>
+    <input type="submit" value="Add Animal" />
+</form>

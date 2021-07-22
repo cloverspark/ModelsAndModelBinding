@@ -22,7 +22,7 @@ namespace ModelsAndModelBinding.Controllers
             Animal pet = new Animal();
             pet.AnimalName = form["Animal_Name"];
             pet.OwnerFullName = form["Animals_Owner_Name"];
-            pet.breed = form["Animal_Breed"];
+            pet.Breed = form["Animal_Breed"];
             pet.DateTimeOfDropOff =Convert.ToDateTime(form["Date_Dropped_Off"]);
 
             // add to database
