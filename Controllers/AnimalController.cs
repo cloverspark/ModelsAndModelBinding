@@ -18,12 +18,18 @@ namespace ModelsAndModelBinding.Controllers
         [HttpPost]//called on submit
         public IActionResult Add(IFormCollection form)
         {
+            // need server side validation for all data
             Animal pet = new Animal();
             pet.AnimalName = form["Animal_Name"];
             pet.OwnerFullName = form["Animals_Owner_Name"];
             pet.breed = form["Animal_Breed"];
             pet.DateTimeOfDropOff =Convert.ToDateTime(form["Date_Dropped_Off"]);
-            return View();
+
+            // add to database
+
+            ViewData["Added"] = true;
+
+            return View();      
         }
     }
 }
