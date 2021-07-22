@@ -41,7 +41,8 @@ namespace ModelsAndModelBinding.Controllers
         {
             if (ModelState.IsValid) // will run all validation if passed returns true
             {
-                
+                ViewData["message"] = $"{A.OwnerFullName} you pet named {A.AnimalName} was added with an ID of 1";
+                //Add to database
             }
             return View();
         }

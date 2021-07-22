@@ -2,10 +2,11 @@
 @{
     ViewData["Title"] = "AddWithBinding";
 }
+@if (ViewData["Message"] == null)
+{
+    <h1>Add With ModelBinding</h1>
 
-<h1>Add With ModelBinding</h1>
-
-<form method="post">
+    <form method="post">
     <div class="form-group">
         <label asp-for="AnimalName"></label>
         <input class="form-control" asp-for="AnimalName" />
@@ -27,4 +28,9 @@
         <span asp-validation-for="DateTimeOfDropOff"></span>
     </div>
     <input class="btn btn-primary" type="submit" value="Add Animal" />
-</form>
+    </form>
+}
+else 
+{ 
+    <h2 class="alert alert-success" role="alert" >@ViewData["Message"]</h2>
+}
